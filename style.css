@@ -1,100 +1,89 @@
-body{
- display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
-.container{
-    border: 2px solid;
-    width: 700px;
-    height: 500px;
+
+/* Body */
+body {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
-}
-.child{
-     
-    border: 6px solid;
-    background-color: black;
-    height: 60px;
-    border-radius: 50px 50px 50px 50px;
-    
-    
-}
-.child-1{
-    animation-name: a;
-    animation-duration: 0.8s;
-    animation-delay: 0.2s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-}
-.child-2{
-    animation-name: a;
-    animation-duration: 0.9s;
-    animation-delay: 0.4s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-}
-.child-3{
-    animation-name: a;
-    animation-duration: 0.8s;
-    animation-delay: 0.6s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-}
-.child-4{
-    animation-name: a;
-    animation-duration: 0.8s;
-    animation-delay: 0.8s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-}
-.child-5{
-    animation-name: a;
-    animation-duration: 0.8s;
-    animation-delay: 0.2s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-}
-.child-6{
-    animation-name: a;
-    animation-duration: 0.8s;
-    animation-delay: 0.4s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-}
-.child-7{
-    animation-name: a;
-    animation-duration: 0.8s;
-    animation-delay: 0.6s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-}
-.child-8{
-    animation-name: a;
-    animation-duration: 0.8s;
-    animation-delay: 0.8s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-}
-.child-9{
-    animation-name: a;
-    animation-duration: 0.8s;
-    animation-delay: 0.2s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-}
-@keyframes a{
-      10%{
-        transform:scale(1,1);
-      }
-      50%{
-        transform: scale(0.8,3);
-      }
-      100%{
-        transform: scale(0.8,0.5);
-      }
-      
+    background: linear-gradient(135deg, #667eea, #764ba2);
 }
 
+/* Main container */
+div {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Image */
+#image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #667eea;
+    margin-bottom: 20px;
+}
+
+/* Timer text */
+#timer {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    div {
+        width: 260px;
+        padding: 20px;
+    }
+
+    #image {
+        width: 110px;
+        height: 110px;
+    }
+
+    #timer {
+        font-size: 22px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    div {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #image {
+        width: 90px;
+        height: 90px;
+    }
+
+    #timer {
+        font-size: 18px;
+    }
+}
