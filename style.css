@@ -1,89 +1,57 @@
-/* Reset */
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-
-/* Body */
-body {
-    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    justify-content: center;
+    height: 100vh;
 }
 
-/* Main container */
-div {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 20px;
-    text-align: center;
-    width: 320px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
+img {
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
 }
 
-/* Hover effect */
-div:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-}
-
-/* Image */
-#image {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #667eea;
+#heading {
+    color: black;
+    font-size: 32px;
+    letter-spacing: 2px;
     margin-bottom: 20px;
 }
 
-/* Timer text */
-#timer {
-    font-size: 26px;
+input {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff7eb3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff4f93;
+    transform: scale(1.05);
+}
+
+#result {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 24px;
     font-weight: bold;
-    color: #333;
-    letter-spacing: 1px;
-}
-
-/* Tablet */
-@media (max-width: 768px) {
-    div {
-        width: 260px;
-        padding: 20px;
-    }
-
-    #image {
-        width: 110px;
-        height: 110px;
-    }
-
-    #timer {
-        font-size: 22px;
-    }
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-
-    div {
-        width: 100%;
-        padding: 15px;
-    }
-
-    #image {
-        width: 90px;
-        height: 90px;
-    }
-
-    #timer {
-        font-size: 18px;
-    }
 }
