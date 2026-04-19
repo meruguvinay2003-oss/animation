@@ -56,6 +56,8 @@ button.onclick=function(){
     if(name.value==""){
       alert("please enter your name");
       return
+    } else if(name.value=="swetha"){
+        alert("vinay's bestfreind is swetha  do you want know your future goal")
     }
     result.innerHTML="";
     let count=0;
